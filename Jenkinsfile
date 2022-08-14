@@ -1,25 +1,25 @@
 pipeline {
   agent any
   stages {
-    stage('准备阶段') {
+    stage('Prepare') {
       agent any
       steps {
         sh 'java --version'
       }
     }
-    stage('构建阶段') {
+    stage('Build') {
       agent any
       steps {
         sh 'java --version'
       }
     }
-    stage('制品阶段') {
+    stage('Artifact') {
       agent any
       steps {
         sh 'java --version'
       }
     }
-    stage('部署阶段') {
+    stage('Deploy') {
       agent any
       steps {
         sh 'java --version'
