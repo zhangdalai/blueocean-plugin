@@ -5,20 +5,25 @@ pipeline {
       agent any
       steps {
         sh 'java --version'
+        git(url: 'https://', branch: 'master', changelog: true)
+        sh 'nodeJSInstallationName: \'Node 10.1\''
       }
     }
+
     stage('Build') {
       agent any
       steps {
         sh 'java --version'
       }
     }
+
     stage('Artifact') {
       agent any
       steps {
         sh 'java --version'
       }
     }
+
     stage('Deploy') {
       agent any
       steps {
