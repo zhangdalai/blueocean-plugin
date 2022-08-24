@@ -5,7 +5,6 @@ pipeline {
       agent any
       steps {
         sh 'java --version'
-        git(url: 'https://', branch: 'master', changelog: true)
         sh 'nodeJSInstallationName: \'Node 10.1\''
       }
     }
