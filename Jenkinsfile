@@ -5,7 +5,6 @@ pipeline {
       agent any
       steps {
         sh 'java --version'
-        sh 'nodeJSInstallationName: \'Node 10.1\''
       }
     }
 
